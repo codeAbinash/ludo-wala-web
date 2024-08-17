@@ -2,8 +2,15 @@ import Header from '@/components/Header'
 import Wrap from '@/components/Wrap'
 import { APP_NAME } from '@/constants'
 import { ShieldCheckIcon } from 'lucide-react'
+import { useEffect } from 'react'
 
 export default function Download() {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.href = '/LudoWalaV1.0.apk'
+    }, 3000)
+    return () => clearTimeout(timer)
+  }, [])
   return (
     <div>
       <Header />
