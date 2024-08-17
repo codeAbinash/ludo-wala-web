@@ -1,0 +1,37 @@
+.swiper-wrapper {
+  // min-height: 200px;
+  padding-bottom: 40px;
+
+  // .swiper-slide {
+  //   border-radius: 20px;
+  //   overflow: hidden;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   a {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     -webkit-tap-highlight-color: transparent;
+  //     text-decoration: none;
+  //     img {
+  //       width: 100%;
+  //       border-radius: 20px;
+  //       object-fit: cover;
+  //     }
+  //   }
+  // }
+}
+
+$color: #ececec;
+
+.swiper-pagination-bullet {
+  background-color: #ddd !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: $color !important;
+}
+
+.mySwiper {
+  width: 100%;
+}

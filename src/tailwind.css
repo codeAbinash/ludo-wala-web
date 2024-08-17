@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rubik {
+  font-family: 'Rubik', sans-serif;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #1b0029;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .bg-gradient {
+    @apply bg-gradient-to-r from-[#ff6a00] to-[#ee0979] text-white;
+  }
+  .heading {
+    @apply text-center text-base font-light uppercase text-green-400 sm:text-2xl;
+  }
+  .sub-heading {
+    @apply grad w-full text-center text-xl font-bold sm:text-3xl;
+  }
+  .body-content {
+    @apply mt-4 text-center text-xs font-light text-white/60 sm:text-xl;
+  }
+  .border-little-left {
+    @apply border border-b-0 border-r-0 border-t-0 border-l-white/20;
+  }
+  .border-little-right {
+    @apply border border-b-0 border-l-0 border-t-0 border-r-white/20;
+  }
+  .btn {
+    @apply rubik inline-block rounded-full border-2 border-white/40 bg-g px-8 py-3.5 text-center text-base font-bold text-white lg:text-xl;
+  }
+}
+
+.grad {
+  background: linear-gradient(85.98deg, #ffe974 10.89%, #d06cff 91.16%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.grad2 {
+  background: linear-gradient(84.56deg, #ffa370 12.23%, #ffdf6c 94.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mw {
+  max-width: 1500px;
+}
